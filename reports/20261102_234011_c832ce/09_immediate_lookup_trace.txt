@@ -1,0 +1,45 @@
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Downloads\selenium_python\selenium_python\run_labs.py", line 184, in immediate
+    actual = self.driver.find_element(By.ID, 'course-ready').text
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\Downloads\selenium_python\selenium_python\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 914, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\Downloads\selenium_python\selenium_python\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 506, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\ASUS\Downloads\selenium_python\selenium_python\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="course-ready"]"}
+  (Session info: chrome=156.0.8078.74); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff76647be65]
+	(No symbol) [0x7ff7663835f0]
+	(No symbol) [0x7ff7661f26d3]
+	(No symbol) [0x7ff7669fd8e1]
+	(No symbol) [0x7ff7669fdb3c]
+	(No symbol) [0x7ff766a2bbb7]
+	(No symbol) [0x7ff766226661]
+	(No symbol) [0x7ff76620b969]
+	(No symbol) [0x7ff76620cca3]
+	(No symbol) [0x7ff7668f5af1]
+	(No symbol) [0x7ff7669167f7]
+	(No symbol) [0x7ff76690ce20]
+	(No symbol) [0x7ff76659ff8e]
+	(No symbol) [0x7ff766392865]
+	(No symbol) [0x7ff76638d1d4]
+	(No symbol) [0x7ff76638d364]
+	(No symbol) [0x7ff76637644c]
+	(No symbol) [0x7ff8a38bdda7]
+	(No symbol) [0x7ff8a57fee4c]
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\Downloads\selenium_python\selenium_python\run_labs.py", line 100, in case
+    details = fn() or {}
+              ^^^^
+  File "C:\Users\ASUS\Downloads\selenium_python\selenium_python\run_labs.py", line 186, in immediate
+    raise EarlyLookupFailure(
+EarlyLookupFailure: The course-ready element is not in the DOM yet (NoSuchElementException).

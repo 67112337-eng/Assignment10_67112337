@@ -1,0 +1,23 @@
+{
+  "created": "2026-11-02T23:36:55.703864+07:00",
+  "python": "3.11.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "selenium": "4.51.0",
+  "browser": "chrome",
+  "browser_version": "156.0.8078.74",
+  "counts": {
+    "PASS": 1
+  },
+  "results": [
+    {
+      "lab": 0,
+      "case": "environment_check",
+      "expected": "CE Course Registration",
+      "actual": "CE Course Registration",
+      "status": "PASS",
+      "detail": "Observed behavior matches the test.",
+      "seconds": 0.263,
+      "screenshot": "01_environment_check.png"
+    }
+  ]
+}
